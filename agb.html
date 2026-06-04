@@ -43,66 +43,169 @@
             font-size: 0.9em;
             color: #666;
         }
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        .lang-btn {
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 1.1em;
+            border: 2px solid #43A047;
+            background-color: #fff;
+            color: #43A047;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn.active {
+            background-color: #43A047;
+            color: white;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .binding-notice {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            border-left: 5px solid #43A047;
+        }
     </style>
 </head>
 <body>
+
     <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
-    <p style="text-align:center; font-weight:bold;">Rauchfrei – Gesund und Reich<br>Stand: Mai 2026</p>
+    <p style="text-align:center; font-weight:bold;">Rauchfrei Gesund und Reich / Smokefree Healthy & Wealthy<br>Stand: Juni 2026</p>
 
-    <h2>1. Geltungsbereich</h2>
-    <p>Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der mobilen App „Rauchfrei – Gesund und Reich“ (nachfolgend „App“) sowie für alle darin angebotenen In-App-Käufe.</p>
+    <div class="binding-notice">
+        <strong>Wichtiger rechtlicher Hinweis:</strong> Die deutsche Version dieser AGB ist rechtlich verbindlich. 
+        Die englische Version dient ausschließlich Ihrer Information und hat keine rechtliche Wirkung.
+    </div>
 
-    <h2>2. Monetarisierungsmodell</h2>
-    <p>Die App wird in einer kostenlosen Version angeboten, die durch Werbeeinblendungen finanziert wird. Bestimmte erweiterte Funktionen und Inhalte (Premium-Features) können gegen Zahlung eines Einmalbetrags oder eines Abonnements freigeschaltet werden. Die kostenlose Version bleibt auch nach einem Premium-Kauf nutzbar.</p>
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('de')">🇩🇪 Deutsche Version</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">🇬🇧 Click here for English version</button>
+    </div>
 
-    <h2>3. Vertragsgegenstand</h2>
-    <p>Die App dient ausschließlich der persönlichen Motivation und Erfolgsverfolgung beim Rauchstopp oder Vape-Stopp. Alle Inhalte (Phasen, Tipps, Fortschrittsanzeigen, Urkunden etc.) haben rein motivierenden Charakter und stellen keine medizinische Beratung, Diagnose oder Therapie dar.</p>
+    <!-- ====================== DEUTSCHE VERSION ====================== -->
+    <div id="content-de" class="content active">
+        <h2>1. Geltungsbereich</h2>
+        <p>Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der mobilen App „Rauchfrei – Gesund und Reich“ bzw. „Vapefrei – Gesund und Reich“ (nachfolgend „App“) sowie für alle darin angebotenen In-App-Käufe.</p>
 
-    <h2>4. Premium-Features und Preise</h2>
-    <p>Das Premium-Paket („Freiheitspaket“) umfasst:<br>
-    • Werbefreie Nutzung der App<br>
-    • Vollständiger Phasenplan mit allen Tipps und Urkunden<br>
-    • Erweiterte Widgets und Funktionen in „Mein Bereich“<br>
-    • Exklusive Designs und zusätzliche Statistiken</p>
+        <h2>2. Monetarisierungsmodell</h2>
+        <p>Die App wird in einer kostenlosen Version angeboten, die durch Werbeeinblendungen (Google AdMob und Unity Ads) finanziert wird. Bestimmte erweiterte Funktionen und Inhalte (Premium-Features) können gegen Zahlung eines Einmalbetrags oder eines Abonnements freigeschaltet werden. Die kostenlose Version bleibt auch nach einem Premium-Kauf nutzbar.</p>
 
-    <p><strong>Aktuelle Preise (Stand Mai 2026):</strong><br>
-    • Monats-Abo: 1,99 € pro Monat (3 Tage kostenlos testen)<br>
-    • Jahres-Abo: 16,99 € pro Jahr (beste Wahl für langfristigen Erfolg)<br>
-    • Lifetime (einmalig): 23,99 € (lebenslanger Zugriff)</p>
+        <h2>3. Vertragsgegenstand</h2>
+        <p>Die App dient ausschließlich der persönlichen Motivation und Erfolgsverfolgung beim Rauchstopp oder Vape-Stopp. Alle Inhalte (Phasen, Tipps, Fortschrittsanzeigen, Urkunden etc.) haben rein motivierenden Charakter und stellen keine medizinische Beratung, Diagnose oder Therapie dar.</p>
 
-    <p>Die jeweils gültigen Preise werden dir vor Abschluss des Kaufs transparent in der App angezeigt. Maßgeblich ist immer der Preis zum Zeitpunkt des Kaufs.</p>
+        <h2>4. Premium-Features und Preise</h2>
+        <p>Das Premium-Paket („Freiheitspaket“) umfasst:<br>
+        • Werbefreie Nutzung der App<br>
+        • Vollständiger Phasenplan mit allen Tipps und Urkunden<br>
+        • Erweiterte Widgets und Funktionen in „Mein Bereich“<br>
+        • Exklusive Designs und zusätzliche Statistiken</p>
+        <p><strong>Aktuelle Preise:</strong> Die jeweils gültigen Preise für das Monats-Abo, Jahres-Abo oder die Lifetime-Freischaltung werden dir vor Abschluss des Kaufs transparent in der App angezeigt. Maßgeblich ist immer der Preis zum Zeitpunkt des Kaufs.</p>
 
-    <h2>5. In-App-Käufe und Zahlung</h2>
-    <p>Alle Käufe werden ausschließlich über den Google Play Store bzw. den Apple App Store abgewickelt. Es gelten die jeweiligen Zahlungs- und Vertragsbedingungen von Google bzw. Apple.</p>
+        <h2>5. In-App-Käufe und Zahlung</h2>
+        <p>Alle Käufe werden ausschließlich über den Google Play Store bzw. den Apple App Store abgewickelt. Es gelten die jeweiligen Zahlungs- und Vertragsbedingungen von Google bzw. Apple. Die Zahlungsabwicklung erfolgt über das jeweilige App-Store-Billing-System.</p>
 
-    <h2>6. Abonnements</h2>
-    <p>Abonnements verlängern sich automatisch, sofern sie nicht rechtzeitig gekündigt werden. Die Kündigung ist jederzeit über die Einstellungen im Google Play Store oder im Apple App Store möglich. Die Kündigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam.</p>
+        <h2>6. Abonnements</h2>
+        <p>Abonnements verlängern sich automatisch (Auto-Renewal), sofern sie nicht rechtzeitig gekündigt werden. Die Kündigung ist jederzeit über die Einstellungen im Google Play Store oder im Apple App Store möglich. Die Kündigung wird zum Ende des aktuellen Abrechnungszeitraums wirksam.</p>
 
-    <h2>7. Widerrufsrecht</h2>
-    <p>Du hast das gesetzliche Widerrufsrecht von 14 Tagen ab Abschluss des Kaufs. Die Rückabwicklung erfolgt direkt über den Google Play Store oder den Apple App Store.</p>
+        <h2>7. Widerrufsrecht</h2>
+        <p>Du hast das gesetzliche Widerrufsrecht von 14 Tagen ab Abschluss des Kaufs. Die Rückabwicklung erfolgt direkt über den Google Play Store oder den Apple App Store.</p>
 
-    <h2>8. Nutzungsrechte</h2>
-    <p>Der Nutzer erhält ein einfaches, nicht übertragbares, zeitlich auf die Dauer der Nutzung beschränktes Nutzungsrecht an der App.</p>
+        <h2>8. Nutzungsrechte</h2>
+        <p>Der Nutzer erhält ein einfaches, nicht übertragbares, zeitlich auf die Dauer der Nutzung beschränktes Nutzungsrecht an der App. Eine Weiterverbreitung, Vervielfältigung oder kommerzielle Nutzung der Inhalte ist untersagt.</p>
 
-    <h2>9. Haftung</h2>
-    <p>Die Nutzung der App erfolgt ausschließlich auf eigenes Risiko. Der Entwickler übernimmt keinerlei Haftung für gesundheitliche, finanzielle oder sonstige Schäden, die durch die Nutzung der App entstehen könnten.</p>
+        <h2>9. Haftung</h2>
+        <p>Die Nutzung der App erfolgt ausschließlich auf eigenes Risiko. Der Entwickler übernimmt keinerlei Haftung für gesundheitliche, finanzielle oder sonstige Schäden, die durch die Nutzung der App oder durch Fehlinterpretation der Inhalte entstehen könnten. Alle Angaben beruhen auf statistischen Durchschnittswerten und sind nicht individuell garantiert.</p>
 
-    <h2>10. Datenschutz</h2>
-    <p>Es gilt die separate Datenschutzerklärung. Alle Fortschrittsdaten werden ausschließlich lokal auf dem Gerät des Nutzers gespeichert.</p>
+        <h2>10. Datenschutz</h2>
+        <p>Es gilt die separate Datenschutzerklärung. Alle Fortschrittsdaten werden ausschließlich lokal auf dem Gerät des Nutzers gespeichert.</p>
 
-    <h2>11. Kündigung und Laufzeit</h2>
-    <p>Abonnements können jederzeit über die Google Play Store- oder Apple App Store-Einstellungen gekündigt werden.</p>
+        <h2>11. Kündigung und Laufzeit</h2>
+        <p>Abonnements können jederzeit über die Google Play Store- oder Apple App Store-Einstellungen gekündigt werden. Die Kündigung wird zum Ende des jeweiligen Abrechnungszeitraums wirksam.</p>
 
-    <h2>12. Gerichtsstand und anwendbares Recht</h2>
-    <p>Es gilt ausschließlich deutsches Recht. Gerichtsstand für alle Streitigkeiten ist das Amtsgericht Amberg.</p>
+        <h2>12. Gerichtsstand und anwendbares Recht</h2>
+        <p>Es gilt ausschließlich deutsches Recht. Gerichtsstand für alle Streitigkeiten ist das Amtsgericht Amberg.</p>
 
-    <h2>13. Salvatorische Klausel</h2>
-    <p>Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+        <h2>13. Salvatorische Klausel</h2>
+        <p>Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+    </div>
+
+    <!-- ====================== ENGLISCHE VERSION ====================== -->
+    <div id="content-en" class="content">
+        <h2>1. Scope of Application</h2>
+        <p>These General Terms and Conditions govern the use of the mobile app “Smoke-Free – Healthy and Wealthy” or “Vape-Free – Healthy and Wealthy” (hereinafter “App”) and all in-app purchases offered therein.</p>
+
+        <h2>2. Monetization Model</h2>
+        <p>The app is offered in a free version financed by advertisements (Google AdMob and Unity Ads). Certain extended features and content (Premium Features) can be unlocked for a one-time payment or subscription. The free version remains fully usable even after purchasing Premium.</p>
+
+        <h2>3. Subject Matter of the Contract</h2>
+        <p>The app serves exclusively for personal motivation and progress tracking when quitting smoking or vaping. All content (phases, tips, progress indicators, certificates etc.) has purely motivational character and does not constitute medical advice, diagnosis or therapy.</p>
+
+        <h2>4. Premium Features and Prices</h2>
+        <p>The Premium Package (“Freedom Package”) includes:<br>
+        • Ad-free use of the app<br>
+        • Complete phase plan with all tips and certificates<br>
+        • Extended widgets and functions in “My Area”<br>
+        • Exclusive designs and additional statistics</p>
+        <p><strong>Current prices:</strong> The currently valid prices for the monthly subscription, annual subscription or lifetime unlock will be shown transparently in the app before purchase. The price at the time of purchase is always decisive.</p>
+
+        <h2>5. In-App Purchases and Payment</h2>
+        <p>All purchases are processed exclusively via the Google Play Store or Apple App Store. The respective payment and contract terms of Google or Apple apply.</p>
+
+        <h2>6. Subscriptions</h2>
+        <p>Subscriptions automatically renew unless cancelled in time. Cancellation is possible at any time via the settings in the Google Play Store or Apple App Store.</p>
+
+        <h2>7. Right of Withdrawal</h2>
+        <p>You have the statutory right of withdrawal of 14 days from the conclusion of the purchase. Refunds are processed directly via the Google Play Store or Apple App Store.</p>
+
+        <h2>8. Rights of Use</h2>
+        <p>The user receives a simple, non-transferable, time-limited right of use for the duration of the subscription or lifetime unlock. Any redistribution, reproduction or commercial use of the content is prohibited.</p>
+
+        <h2>9. Liability</h2>
+        <p>Use of the app is at your own risk. The developer assumes no liability for health, financial or any other damages that may arise from the use of the app or misinterpretation of the content. All information is based on statistical average values and is not individually guaranteed.</p>
+
+        <h2>10. Data Protection</h2>
+        <p>The separate privacy policy applies. All progress data is stored exclusively locally on the user’s device.</p>
+
+        <h2>11. Termination and Term</h2>
+        <p>Subscriptions can be cancelled at any time via the Google Play Store or Apple App Store settings.</p>
+
+        <h2>12. Jurisdiction and Applicable Law</h2>
+        <p>German law applies exclusively. The place of jurisdiction for all disputes is the Amberg Local Court.</p>
+
+        <h2>13. Severability Clause</h2>
+        <p>Should any provision of these GTC be or become invalid, the validity of the remaining provisions shall remain unaffected.</p>
+    </div>
 
     <div class="footer">
         © 2026 Raphael Kläring – Alle Rechte vorbehalten.<br>
         Diese Seite wird über GitHub Pages bereitgestellt.<br>
         <a href="https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/" target="_blank">Zur Datenschutzerklärung</a>
     </div>
+
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (lang === 'de') {
+                document.querySelectorAll('.lang-btn')[0].classList.add('active');
+            } else {
+                document.querySelectorAll('.lang-btn')[1].classList.add('active');
+            }
+            document.getElementById('content-de').classList.toggle('active', lang === 'de');
+            document.getElementById('content-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+
 </body>
 </html>
