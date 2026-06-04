@@ -43,6 +43,39 @@
             font-size: 0.9em;
             color: #666;
         }
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        .lang-btn {
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 1.1em;
+            border: 2px solid #43A047;
+            background-color: #fff;
+            color: #43A047;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn.active {
+            background-color: #43A047;
+            color: white;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .binding-notice {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            border-left: 5px solid #43A047;
+        }
         .highlight {
             background-color: #f8f9fa;
             padding: 20px;
@@ -53,81 +86,181 @@
     </style>
 </head>
 <body>
+
     <h1>Datenschutzerklärung</h1>
-    <p style="text-align:center; font-weight:bold;">Rauchfrei – Gesund und Reich<br>Stand: Mai 2026</p>
-    <div class="highlight">
-        <strong>Unser Grundprinzip:</strong> Deine Fortschrittsdaten gehören dir. Deshalb werden alle deine persönlichen Eingaben ausschließlich lokal auf deinem Gerät gespeichert und niemals auf unsere Server übertragen.
+    <p style="text-align:center; font-weight:bold;">Rauchfrei Gesund und Reich / Smokefree Healthy & Wealthy<br>Stand: Juni 2026</p>
+
+    <div class="binding-notice">
+        <strong>Wichtiger rechtlicher Hinweis:</strong> Die deutsche Version dieser Datenschutzerklärung ist rechtlich verbindlich. 
+        Die englische Version dient ausschließlich Ihrer Information und hat keine rechtliche Wirkung.
     </div>
-    <h2>1. Allgemeines</h2>
-    <p>Diese Datenschutzerklärung informiert dich über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb der App „Rauchfrei – Gesund & Reich“. Wir nehmen den Schutz deiner Daten sehr ernst.</p>
-    <h2>2. Verantwortlicher</h2>
-    <p>Raphael Kläring<br>Hermannsberger Weg 8<br>92260 Ammerthal<br>Telefon: 096287409824<br>E-Mail: <a href="mailto:apprakg@icloud.com">apprakg@icloud.com</a></p>
-    <h2>3. Datenschutzbeauftragter</h2>
-    <p>Da die gesetzlichen Voraussetzungen gemäß Art. 37 DSGVO sowie § 38 BDSG (neu) nicht vorliegen, ist kein Datenschutzbeauftragter bestellt. Anfragen zum Datenschutz richtest du bitte direkt an den oben genannten Verantwortlichen.</p>
-    <h2>4. Verarbeitung lokaler Daten (Gesundheitsfortschritt)</h2>
-    <p>Die App ermöglicht es dir, Daten zu deinem Rauch- oder Vape-Stopp einzugeben und Fortschritte zu tracken.</p>
-    <p>• Datenkategorien: Datum des Stopps, bisheriger täglicher/wöchentlicher Konsum, Preis pro Einheit, persönliche Motivationsgründe (Manifest).<br>
-    • Zweck: Berechnung rauch-/vapefreier Tage, gespartem Geld sowie die Darstellung gesundheitlicher Regenerationsphasen.<br>
-    • Speicherung: Diese Daten werden rein lokal in einer Datenbank auf deinem Smartphone gespeichert. Wir haben zu keinem Zeitpunkt Zugriff auf diese Informationen.<br>
-    <strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
-    <h2>5. Firebase-Nutzung (Analytics & Crashlytics)</h2>
-    <p>Zur Verbesserung der App-Stabilität und Nutzererfahrung nutzen wir Firebase von Google:<br>
-    • Firebase Analytics: Anonymisierte Nutzungsdaten zur App-Optimierung.<br>
-    • Firebase Crashlytics: Automatische Absturzberichte, um Fehler schnell zu beheben.</p>
-    <p>Es werden <strong>keine</strong> personenbezogenen Gesundheitsdaten an Firebase übertragen.<br>
-    <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt auf Grundlage deiner ausdrücklichen Einwilligung über das Consent-Banner beim Start der App (Art. 6 Abs. 1 lit. a DSGVO).<br>
-    <a href="https://firebase.google.com/support/privacy" target="_blank">Datenschutzerklärung von Firebase</a></p>
-    <h2>6. RevenueCat & App Store Billing (In-App-Käufe & Abonnements)</h2>
-    <p>Premium-Funktionen werden über RevenueCat in Verbindung mit dem Google Play Billing System und dem Apple App Store Billing System abgewickelt.<br>
-    • Die Zahlungsabwicklung erfolgt ausschließlich über Google Play oder den Apple App Store.<br>
-    • RevenueCat speichert nur die Information, ob ein Nutzer das „premium“-Entitlement besitzt.</p>
-    <p>
-        <a href="https://www.revenuecat.com/privacy" target="_blank">Datenschutzerklärung von RevenueCat</a> |
-        <a href="https://policies.google.com/privacy" target="_blank">Google Play Billing Datenschutz</a> |
-        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store Datenschutz</a>
-    </p>
-    <h2>7. Werbung & Finanzierung (Google AdMob & Unity Ads)</h2>
-    <p>Um die Grundfunktionen der App kostenlos anbieten zu können, nutzen wir die Werbedienste Google AdMob und Unity Ads.<br>
-    <strong>Rechtsgrundlage:</strong> Deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung jederzeit in den App-Einstellungen widerrufen.<br>
-    <a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob Datenschutz</a> |
-    <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Ads Datenschutz</a></p>
 
-    <!-- ============================================= -->
-    <!-- NUR TIKTOK HINZUGEFÜGT – alles andere identisch -->
-    <!-- ============================================= -->
-    <h2>7.1 TikTok App Events SDK</h2>
-    <p>Zur Messung und Optimierung unserer TikTok-Werbekampagnen nutzen wir das „TikTok App Events SDK“. Dabei werden technische Daten wie die Werbe-ID (Advertising ID), Geräteinformationen und Nutzungsdaten (z. B. App-Start, Install-Events, In-App-Käufe) an TikTok Inc. (TikTok Pte. Ltd.) übermittelt. Die Datenverarbeitung erfolgt auf Grundlage deiner ausdrücklichen Einwilligung über das Consent-Banner beim Start der App (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung jederzeit in den App-Einstellungen unter „Werbe-Einwilligung widerrufen“ zurücknehmen.<br>
-    Weitere Informationen findest du in der Datenschutzerklärung von TikTok: <a href="https://www.tiktok.com/legal/privacy-policy?lang=de" target="_blank">https://www.tiktok.com/legal/privacy-policy?lang=de</a></p>
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('de')">🇩🇪 Deutsche Version</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">🇬🇧 Click here for English version</button>
+    </div>
 
-    <h2>8. Absturzberichte und Diagnosedaten</h2>
-    <p>Um die Stabilität der App zu gewährleisten, nutzen wir die standardmäßigen Diagnosedaten der Google Play Console und Apple.</p>
-    <h2>9. Lokale Benachrichtigungen</h2>
-    <p>Zur Zustellung von Motivationsnachrichten nutzt die App ausschließlich lokale Benachrichtigungen. Es werden keine Daten an externe Server übertragen.</p>
-    <h2>10. Deine Rechte</h2>
-    <p>Du hast gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Da alle Fortschrittsdaten lokal auf deinem Gerät gespeichert sind, kannst du diese Rechte einfach selbst ausüben (App-Daten zurücksetzen oder App deinstallieren).</p>
-    <p>Dein Recht auf Datenübertragbarkeit kannst du direkt in den Einstellungen über die Funktion „Daten exportieren“ ausüben.</p>
-    <p>Bei Fragen kannst du dich jederzeit an den Verantwortlichen wenden. Zusätzlich hast du das Recht, bei einer Aufsichtsbehörde Beschwerde einzulegen. Die für uns zuständige Aufsichtsbehörde ist der Bayerische Landesbeauftragte für den Datenschutz.</p>
-    <h2>11. Medizinischer Haftungsausschluss</h2>
-    <p>Diese App stellt keine medizinische Beratung, Diagnose oder Therapie dar. Alle Angaben dienen ausschließlich der Motivation. Für gesundheitliche Fragen konsultiere bitte einen Arzt oder qualifizierten Fachmann.</p>
-    <!-- Impressum -->
-    <h2>12. Impressum</h2>
-    <p>Raphael Kläring<br>Hermannsberger Weg 8<br>92260 Ammerthal</p>
-    <p><strong>Kontakt:</strong><br>Telefon: 096287409824<br>E-Mail: <a href="mailto:apprakg@icloud.com">apprakg@icloud.com</a></p>
-    <!-- EU-Streitschlichtung -->
-    <h2>13. EU-Streitschlichtung</h2>
-    <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a><br>
-    Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-    <!-- Haftungshinweis -->
-    <h2>14. Haftungshinweis</h2>
-    <p>Diese App dient ausschließlich der persönlichen Motivation und Erfolgsverfolgung beim Rauchstopp bzw. Vape-Stopp.</p>
-    <p>Der Name der App „Rauchfrei – Gesund und Reich“ dient rein der Motivation. Durch die Nutzung der App wirst du weder automatisch gesünder noch reicher. Ob du tatsächlich rauch- oder vapefrei bleibst, hängt allein von deiner persönlichen Disziplin ab.</p>
-    <p>Alle angezeigten Werte beruhen auf statistischen Durchschnittswerten. Sie ersetzen keine medizinische Beratung.</p>
-    <p>Der Entwickler übernimmt keinerlei Haftung für Schäden, die durch die Nutzung der App entstehen könnten. Die App ist kein Medizinprodukt.</p>
-    <p><strong>Haftung ausgeschlossen.</strong></p>
+    <!-- ====================== DEUTSCHE VERSION ====================== -->
+    <div id="content-de" class="content active">
+        <div class="highlight">
+            <strong>Unser Grundprinzip:</strong> Deine Fortschrittsdaten gehören dir. Deshalb werden alle deine persönlichen Eingaben (z. B. Rauch-/Vapestopp-Datum, bisheriger Konsum und Ersparnisse) ausschließlich lokal auf deinem Gerät gespeichert und niemals auf unsere Server übertragen.
+        </div>
+
+        <h2>1. Allgemeines</h2>
+        <p>Diese Datenschutzerklärung informiert dich über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb der App „Rauchfrei – Gesund & Reich“. Wir nehmen den Schutz deiner Daten sehr ernst.</p>
+
+        <h2>2. Verantwortlicher</h2>
+        <p>Raphael Kläring<br>Hermannsberger Weg 8<br>92260 Ammerthal<br>Telefon: 096287409824<br>E-Mail: <a href="mailto:apprakg@icloud.com">apprakg@icloud.com</a></p>
+
+        <h2>3. Datenschutzbeauftragter</h2>
+        <p>Da die gesetzlichen Voraussetzungen gemäß Art. 37 DSGVO sowie § 38 BDSG (neu) nicht vorliegen, ist kein Datenschutzbeauftragter bestellt. Anfragen zum Datenschutz richtest du bitte direkt an den oben genannten Verantwortlichen.</p>
+
+        <h2>4. Verarbeitung lokaler Daten (Gesundheitsfortschritt)</h2>
+        <p>Die App ermöglicht es dir, Daten zu deinem Rauch- oder Vape-Stopp einzugeben und Fortschritte zu tracken.</p>
+        <p>• Datenkategorien: Datum des Stopps, bisheriger täglicher/wöchentlicher Konsum, Preis pro Einheit, persönliche Motivationsgründe (Manifest).<br>
+        • Zweck: Berechnung rauch-/vapefreier Tage, gespartem Geld sowie die Darstellung gesundheitlicher Regenerationsphasen.<br>
+        • Speicherung: Diese Daten werden rein lokal in einer Datenbank auf deinem Smartphone gespeichert. Wir haben zu keinem Zeitpunkt Zugriff auf diese Informationen.<br>
+        <strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
+
+        <h2>5. Firebase-Nutzung (Analytics & Crashlytics)</h2>
+        <p>Zur Verbesserung der App-Stabilität und Nutzererfahrung nutzen wir Firebase von Google:<br>
+        • Firebase Analytics: Anonymisierte Nutzungsdaten (z. B. welche Bildschirme häufig genutzt werden, wie lange Sessions dauern) zur App-Optimierung.<br>
+        • Firebase Crashlytics: Automatische Absturzberichte, um Fehler schnell zu beheben.</p>
+        <p>Es werden <strong>keine</strong> personenbezogenen Gesundheitsdaten (Stopp-Datum, Konsum, Sparbetrag etc.) an Firebase übertragen. Die übermittelten Daten sind vollständig anonymisiert und lassen keinen Rückschluss auf deine Person zu.<br>
+        <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt auf Grundlage deiner ausdrücklichen Einwilligung über das Consent-Banner beim Start der App (Art. 6 Abs. 1 lit. a DSGVO).<br>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">Datenschutzerklärung von Firebase</a></p>
+
+        <h2>6. RevenueCat & App Store Billing (In-App-Käufe & Abonnements)</h2>
+        <p>Premium-Funktionen (werbefreie Nutzung, erweiterte Features) werden über den Dienst RevenueCat in Verbindung mit dem Google Play Billing System und dem Apple App Store Billing System abgewickelt.</p>
+        <p>• Bei einem Kauf wird lediglich ein anonymes Token an RevenueCat gesendet.<br>
+        • Die eigentliche Zahlungsabwicklung erfolgt ausschließlich über Google Play oder den Apple App Store.<br>
+        • Es werden keine Zahlungsdaten, Kreditkarteninformationen oder persönlichen Gesundheitsdaten an uns oder RevenueCat übermittelt.<br>
+        • RevenueCat speichert nur die Information, ob ein Nutzer das „premium“-Entitlement besitzt.</p>
+        <p>
+            <a href="https://www.revenuecat.com/privacy" target="_blank">Datenschutzerklärung von RevenueCat</a> |
+            <a href="https://policies.google.com/privacy" target="_blank">Google Play Billing Datenschutz</a> |
+            <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store Datenschutz</a>
+        </p>
+
+        <h2>7. Werbung & Finanzierung (Google AdMob & Unity Ads)</h2>
+        <p>Um die Grundfunktionen der App kostenlos anbieten zu können, nutzen wir die Werbedienste Google AdMob und Unity Ads. Dabei kann das Werbenetzwerk folgende Daten verarbeiten: Werbe-IDs (z. B. AAID), IP-Adresse sowie Informationen über die Interaktion mit Anzeigen.</p>
+        <p>• Zweck: Anzeige von Werbung, die je nach deiner Einwilligung personalisiert oder nicht-personalisiert erfolgen kann.<br>
+        • Einwilligung & Widerruf: Du kannst die Einwilligung jederzeit in den App-Einstellungen unter „Werbe-Einwilligung widerrufen“ zurücknehmen.<br>
+        <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+
+        <h2>7.1 TikTok App Events SDK</h2>
+        <p>Zur Messung und Optimierung unserer TikTok-Werbekampagnen nutzen wir das „TikTok App Events SDK“. Dabei werden technische Daten wie die Werbe-ID (Advertising ID), Geräteinformationen und Nutzungsdaten (z. B. App-Start, Install-Events, In-App-Käufe) an TikTok Inc. (TikTok Pte. Ltd.) übermittelt. Die Datenverarbeitung erfolgt auf Grundlage deiner ausdrücklichen Einwilligung über das Consent-Banner beim Start der App (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung jederzeit in den App-Einstellungen unter „Werbe-Einwilligung widerrufen“ zurücknehmen.<br>
+        Weitere Informationen findest du in der Datenschutzerklärung von TikTok: <a href="https://www.tiktok.com/legal/privacy-policy?lang=de" target="_blank">https://www.tiktok.com/legal/privacy-policy?lang=de</a></p>
+
+        <h2>8. Absturzberichte und Diagnosedaten (Google Play Console / Apple)</h2>
+        <p>Um die Stabilität und Zuverlässigkeit der App zu gewährleisten, nutzen wir die standardmäßigen Diagnosedaten der Google Play Console und Apple.</p>
+
+        <h2>9. Lokale Benachrichtigungen</h2>
+        <p>Zur Zustellung von Motivationsnachrichten und Erinnerungen nutzt die App ausschließlich lokale Benachrichtigungen. Es werden keine Daten an externe Server übertragen.</p>
+
+        <h2>10. Deine Rechte</h2>
+        <p>Du hast gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Da alle Fortschrittsdaten lokal auf deinem Gerät gespeichert sind, kannst du diese Rechte einfach selbst ausüben (App-Daten zurücksetzen oder App deinstallieren).</p>
+        <p>Dein Recht auf Datenübertragbarkeit kannst du direkt in den Einstellungen über die Funktion „Daten exportieren“ ausüben.</p>
+        <p>Bei Fragen kannst du dich jederzeit an den Verantwortlichen wenden. Zusätzlich hast du das Recht, bei einer Aufsichtsbehörde Beschwerde einzulegen. Die für uns zuständige Aufsichtsbehörde ist der Bayerische Landesbeauftragte für den Datenschutz.</p>
+
+        <h2>11. Medizinischer Haftungsausschluss</h2>
+        <p>Diese App stellt keine medizinische Beratung, Diagnose oder Therapie dar. Alle Angaben im Gesundheits-Ticker basieren auf allgemeinen statistischen Durchschnittswerten und dienen ausschließlich der Motivation. Für gesundheitliche Fragen konsultiere bitte einen Arzt oder qualifizierten Fachmann.</p>
+
+        <p><strong>Datenschutz-Homepage:</strong> <a href="https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/" target="_blank">https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/</a></p>
+    </div>
+
+    <!-- ====================== ENGLISCHE VERSION ====================== -->
+    <div id="content-en" class="content">
+        <div class="highlight">
+            <strong>Our Core Principle:</strong> Your progress data belongs to you. Therefore, all your personal entries (e.g. quit date, previous consumption and savings) are stored exclusively locally on your device and are never transferred to our servers.
+        </div>
+
+        <h2>1. General</h2>
+        <p>This privacy policy informs you about the type, scope and purpose of the processing of personal data within the app. We take the protection of your data very seriously.</p>
+
+        <h2>2. Controller</h2>
+        <p>Raphael Kläring<br>Hermannsberger Weg 8<br>92260 Ammerthal, Germany<br>Phone: +49 96287409824<br>E-Mail: <a href="mailto:apprakg@icloud.com">apprakg@icloud.com</a></p>
+
+        <h2>3. Data Protection Officer</h2>
+        <p>No data protection officer has been appointed as the legal requirements under Art. 37 GDPR and § 38 BDSG (new) are not met. Please direct any data protection inquiries to the controller named above.</p>
+
+        <h2>4. Processing of Local Data (Health Progress)</h2>
+        <p>The app allows you to enter data about your smoking or vaping quit and track your progress.</p>
+        <p>• Categories of data: Quit date, previous daily/weekly consumption, price per unit, personal motivation reasons (manifest).<br>
+        • Purpose: Calculation of smoke-/vape-free days, money saved and display of health regeneration phases.<br>
+        • Storage: This data is stored purely locally in a database on your smartphone. We never have access to this information.<br>
+        <strong>Legal basis:</strong> Contract performance (Art. 6 para. 1 lit. b GDPR).</p>
+
+        <h2>5. Firebase Usage (Analytics & Crashlytics)</h2>
+        <p>We use Google Firebase to improve app stability and user experience:<br>
+        • Firebase Analytics: Anonymized usage data (e.g. which screens are used frequently, session duration) for app optimization.<br>
+        • Firebase Crashlytics: Automatic crash reports to fix errors quickly.</p>
+        <p><strong>No</strong> personal health data (quit date, consumption, savings amount etc.) is transmitted to Firebase. The transmitted data is fully anonymized and does not allow any conclusion about your person.<br>
+        <strong>Legal basis:</strong> Your express consent via the consent banner at app start (Art. 6 para. 1 lit. a GDPR).<br>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></p>
+
+        <h2>6. RevenueCat & App Store Billing (In-App Purchases & Subscriptions)</h2>
+        <p>Premium features are processed via RevenueCat in connection with Google Play Billing and Apple App Store Billing.</p>
+        <p>• Only an anonymous token is sent to RevenueCat upon purchase.<br>
+        • Actual payment processing is handled exclusively by Google Play or Apple App Store.<br>
+        • No payment data, credit card information or personal health data is transmitted to us or RevenueCat.<br>
+        • RevenueCat only stores whether a user has the “premium” entitlement.</p>
+        <p>
+            <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a> |
+            <a href="https://policies.google.com/privacy" target="_blank">Google Play Billing Privacy</a> |
+            <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store Privacy</a>
+        </p>
+
+        <h2>7. Advertising & Financing (Google AdMob & Unity Ads)</h2>
+        <p>To keep core features free, we use Google AdMob and Unity Ads. The ad networks may process: Advertising IDs (e.g. AAID), IP address and interaction data.</p>
+        <p>• Purpose: Display of advertising, which may be personalized or non-personalized depending on your consent.<br>
+        • Consent & Withdrawal: You can withdraw your consent at any time in the app settings under “Revoke Ad Consent”.<br>
+        <strong>Legal basis:</strong> Your consent (Art. 6 para. 1 lit. a GDPR).</p>
+
+        <h2>7.1 TikTok App Events SDK</h2>
+        <p>We use the TikTok App Events SDK to measure and optimize our TikTok advertising campaigns. Technical data such as Advertising ID, device information and usage data (e.g. app start, install events, in-app purchases) are transmitted to TikTok Inc. Data processing is based on your express consent via the consent banner at app start (Art. 6 para. 1 lit. a GDPR). You can withdraw your consent at any time in the app settings under “Revoke Ad Consent”.<br>
+        For more information, see TikTok’s Privacy Policy: <a href="https://www.tiktok.com/legal/privacy-policy?lang=en" target="_blank">https://www.tiktok.com/legal/privacy-policy?lang=en</a></p>
+
+        <h2>8. Crash Reports and Diagnostic Data (Google Play Console / Apple)</h2>
+        <p>We use the standard diagnostic data from Google Play Console and Apple to ensure app stability and reliability.</p>
+
+        <h2>9. Local Notifications</h2>
+        <p>The app uses only local notifications for motivational messages and reminders. No data is transmitted to external servers.</p>
+
+        <h2>10. Your Rights</h2>
+        <p>You have the right to information, rectification, erasure, restriction of processing and data portability under GDPR. Since all progress data is stored locally on your device, you can exercise these rights yourself (reset app data or uninstall the app).</p>
+        <p>You can exercise your right to data portability directly in the settings via the “Export Data” function.</p>
+        <p>You can contact the controller at any time with questions. You also have the right to lodge a complaint with a supervisory authority. The supervisory authority responsible for us is the Bavarian State Commissioner for Data Protection.</p>
+
+        <h2>11. Medical Disclaimer</h2>
+        <p>This app does not provide medical advice, diagnosis or treatment. All information in the health ticker is based on general statistical average values and serves solely for motivation. For health questions, please consult a doctor or qualified professional.</p>
+
+        <h2>12. United States Privacy Rights (COPPA & CCPA)</h2>
+        <p>This app is <strong>not directed to children under the age of 13</strong>. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under the age of 13 without verifiable parental consent, we will take reasonable steps to delete such information.</p>
+        <p>For California residents (CCPA/CPRA): We do not sell your personal information. Since all progress data is stored locally on your device, you can exercise your rights (access, deletion, correction) simply by resetting or deleting the app data.</p>
+
+        <p><strong>Data Protection Homepage:</strong> <a href="https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/" target="_blank">https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/</a></p>
+    </div>
+
     <div class="footer">
         © 2026 Raphael Kläring – Alle Rechte vorbehalten.<br>
         Diese Seite wird über GitHub Pages bereitgestellt.<br>
         <a href="https://raphklaering-spec.github.io/rauchfreigesundundreich-datenschutz/" target="_blank">GitHub Repository</a>
     </div>
+
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (lang === 'de') {
+                document.querySelectorAll('.lang-btn')[0].classList.add('active');
+            } else {
+                document.querySelectorAll('.lang-btn')[1].classList.add('active');
+            }
+            document.getElementById('content-de').classList.toggle('active', lang === 'de');
+            document.getElementById('content-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+
 </body>
 </html>
